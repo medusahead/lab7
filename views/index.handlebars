@@ -2,21 +2,40 @@
 
 <html>
 <head>
-	<title>HCI Project Portfolio</title>	
+	<title>HCI Project Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
-  
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114578188-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114578188-1');
+</script>
+
 </head>
 
 <body>
 	<div class="container">
 		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
+			<h1>Alejandro Morataya</h1>
+			<p>human &middot; compooter &middot; interaction</p>
 		</div>
+
+		{{#if viewAlt}}
+			<p>Purple rain, watch it drain, through my veins</p>
+			<p>Left with no guap, came back in a Range</p>
+			<p>Switch it up</p>
+			<p>I can't fill my cup unless it's mud</p>
+			<p>On my blood I cut you off if you ain't talk bout nun!</p>
+			<button class="likeBtn">Like</button>
+			{{else}}
 
 		<h4>Projects</h4>
 		{{#each projects}}
@@ -31,6 +50,7 @@
 				</div>
 			</div>
 		{{/each}}
+		{{/if}}
 
 
 	<script src="https://code.jquery.com/jquery.js"></script>
